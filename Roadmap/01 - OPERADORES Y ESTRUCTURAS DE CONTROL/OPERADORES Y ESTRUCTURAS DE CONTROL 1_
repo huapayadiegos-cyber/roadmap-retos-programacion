@@ -1,0 +1,221 @@
+## Ejercicio
+
+```
+/
+  EJERCICIO:
+  - Crea ejemplos utilizando todos los tipos de operadores de tu lenguaje:
+    Aritméticos, lógicos, de comparación, asignación, identidad, pertenencia, bits...
+    (Ten en cuenta que cada lenguaje puede poseer unos diferentes)
+  - Utilizando las operaciones con operadores que tú quieras, crea ejemplos
+    que representen todos los tipos de estructuras de control que existan
+    en tu lenguaje:
+    Condicionales, iterativas, excepciones...
+  - Debes hacer print por consola del resultado de todos los ejemplos.
+ 
+ DIFICULTAD EXTRA (opcional):
+  Crea un programa que imprima por consola todos los números comprendidos
+  entre 10 y 55 (incluidos), pares, y que no son ni el 16 ni múltiplos de 3.
+ 
+  Seguro que al revisar detenidamente las posibilidades has descubierto algo nuevo.
+
+----Tienes toda la información extendida sobre el roadmap de retos de programación en **[retosdeprogramacion.com/roadmap](https://retosdeprogramacion.com/roadmap)**.
+
+Sigue las **[instrucciones](../../README.md)**, consulta las correcciones y aporta la tuya propia utilizando el lenguaje de programación que quieras.
+ 
+----OPERADORES EN PYTHON----
+
+# Operadores Aritméticos
+a = 10
+b = 5
+suma = a + b      # Suma
+resta = a - b     # Resta
+producto = a * b  # Multiplicación
+division = a / b  # División
+modulo = a % b    # Módulo (resto)
+exponente = a ** b  # Exponenciación
+
+print(f"Suma: {suma}")
+print(f"Resta: {resta}")
+print(f"Producto: {producto}")
+print(f"División: {division}")
+print(f"Módulo: {modulo}")
+print(f"Exponente: {exponente}")
+
+# Operadores Lógicos
+x = True
+y = False
+and_op = x and y  # Y lógico
+or_op = x or y    # O lógico
+not_op = not x    # Negación
+
+print(f"AND: {and_op}")
+print(f"OR: {or_op}")
+print(f"NOT: {not_op}")
+
+# Operadores de Comparación
+igual = a == b          # Igual
+distinto = a != b       # Distinto
+mayor_que = a > b       # Mayor que
+menor_que = a < b       # Menor que
+mayor_o_igual = a >= b  # Mayor o igual
+menor_o_igual = a <= b  # Menor o igual
+
+print(f"Igual: {igual}")
+print(f"Distinto: {distinto}")
+print(f"Mayor que: {mayor_que}")
+print(f"Menor que: {menor_que}")
+print(f"Mayor o igual: {mayor_o_igual}")
+print(f"Menor o igual: {menor_o_igual}")
+
+# Operadores de Asignación
+a = 5
+a += 3  # a = a + 3
+a -= 2  # a = a - 2
+a *= 4  # a = a * 4
+a /= 2  # a = a / 2
+a %= 3  # a = a % 3
+
+print(f"Asig. modificada: {a}")
+
+# Operadores de Identidad
+a = [1, 2, 3]
+b = a  # b apunta a la misma lista que a
+c = a is b  # Verifica si a y b son el mismo objeto
+
+print(f"a y b son el mismo objeto? {c}")
+
+# Operadores de Pertenencia
+lista = [1, 2, 3, 4, 5]
+pertenece = 3 in lista   # Verifica si 3 está en la lista
+no_pertenece = 6 not in lista  # Verifica si 6 no está en la lista
+
+print(f"3 está en la lista? {pertenece}")
+print(f"6 no está en la lista? {no_pertenece}")
+
+# Operadores Bit a Bit
+a = 0b1100  # 12 en binario
+b = 0b1010  # 10 en binario
+and_bit = a & b  # AND bit a bit
+or_bit = a | b   # OR bit a bit
+xor_bit = a ^ b  # XOR bit a bit
+not_bit = ~a     # NOT bit a bit
+shift_left = a << 2  # Desplazamiento a la izquierda
+shift_right = a >> 2 # Desplazamiento a la derecha
+
+print(f"AND bit a bit: {bin(and_bit)}")
+print(f"OR bit a bit: {bin(or_bit)}")
+print(f"XOR bit a bit: {bin(xor_bit)}")
+print(f"NOT bit a bit: {bin(not_bit)}")
+print(f"Desplazamiento a la izquierda: {bin(shift_left)}")
+print(f"Desplazamiento a la derecha: {bin(shift_right)}")
+
+# Estructuras de Control: Condicionales
+edad = 18
+if edad < 18:
+    print("Eres menor de edad.")
+elif edad == 18:
+    print("Acabas de cumplir la mayoría de edad.")
+else:
+    print("Eres mayor de edad.")
+
+# Estructuras de Control: Iterativas
+# Bucle for
+for i in range(1, 6):
+    print(f"Valor de i: {i}")
+
+# Bucle while
+contador = 1
+while contador <= 5:
+    print(f"Valor de contador: {contador}")
+    contador += 1
+
+# Estructuras de Control: Excepciones
+try:
+    x = int(input("Ingresa un número: "))
+    y = 10 / x
+    print(f"El resultado es: {y}")
+except ValueError:
+    print("¡Eso no es un número!")
+except ZeroDivisionError:
+    print("¡No se puede dividir por cero!")
+finally:
+    print("Este bloque siempre se ejecuta.")
+
+# Dificultad Extra: Números entre 10 y 55, pares, que no sean 16 ni múltiplos de 3
+for num in range(10, 56):
+    if num % 2 == 0 and num != 16 and num % 3 != 0:
+        print(num)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+> Recuerda que cada semana se publica un nuevo ejercicio y se corrige el de la semana anterior en directo desde **[Twitch](https://twitch.tv/mouredev)**. Tienes el horario en la sección "eventos" del servidor de **[Discord](https://discord.gg/mouredev)**.
