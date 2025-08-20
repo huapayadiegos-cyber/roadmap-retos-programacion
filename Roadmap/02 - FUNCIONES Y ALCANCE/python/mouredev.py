@@ -5,6 +5,8 @@ Funciones definidas por el usuario
 # Simple
 
 
+# Simple
+
 def greet():
     print("Hola, Python!")
 
